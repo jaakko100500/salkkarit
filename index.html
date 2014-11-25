@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Salkkarit Soundboard HTML5</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.marionette/2.2.2/backbone.marionette.min.js"></script>		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>		
+		<script type="text/javascript" src="https://code.createjs.com/soundjs-0.5.2.min.js"></script>
+		<script type="text/javascript" src="https://code.createjs.com/preloadjs-0.4.1.min.js"></script>
+
+		<script type="text/template" id="sound-button-template">  			
+  			<button class="btn btn-default"><%= name %></button>
+		</script>
+
+		<script type="text/template" id="player-template">  					
+  			<input type="text" class="form-control input-soundkeys"></input>
+			<button class="btn btn-primary btn-play">Soita</button>
+			<button class="btn btn-primary btn-generate-url">Generoi linkki</button>
+			<span class="span-url"></span>
+		</script>
+
+		<script type="text/javascript" src="scripts/jquery.tokeninput.js"></script>		
+		<script type="text/javascript" src="scripts/audio-queue.js"></script>
+		<script type="text/javascript" src="scripts/ss-model-initializer.js"></script>
+		<script type="text/javascript" src="scripts/ss-models.js"></script>		
+		<script type="text/javascript" src="scripts/ss-views.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/token-input.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/token-input-facebook.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/basics.css">
+	</head>
+	<body>				
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Salkkarit HTML5 Sound Board</h1>
+        <p>Paina klippiä tai valitse sävellysboksiin klippejä soittaaksesi ne peräjälkeen.</p>
+        <div id="player-container"></diV>        
+      </div>
+    </div>    
+    	<div class="container" id="sound-button-container"></div>
+    </div>
+
+	</body>
+</html>
